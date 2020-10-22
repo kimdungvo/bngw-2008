@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="../css/d07.css">
+</head>
+<body>
+    <h2>Sign up</h2>
+    <hr>
+    <form action="" name="formDK" id="formDK">
+        <label for="">Username:</label>
+        <input type="text" name="user" id="user" value="hau dau" required><br><br>
+
+        <label for="">Password</label>
+        <input type="password" name="password" id="password" value="123" required><br><br>
+
+        <label for="">email</label>
+        <input type="email" name="email" id="email" value="hau@gmail.com" required><br><br>
+
+        <label for="">location</label>
+        <select name="location" id="location">
+            <option value="SG">Saigon</option>
+            <option value="HN">Hanoi</option>
+            <option value="HU">Hue</option>
+            <option value="DN">Danang</option>
+        </select><br><br>
+
+        <label for="">gender</label>
+        <input type="radio" name="gender" id="genMale" checked value="Nam">Male
+        <input type="radio" name="gender" id="genFemale" value="Nu">Female<br><br>
+
+        <label for="">birthday</label>
+        <input type="date" name="dob" id="dob" value="2002-08-15" required><br><br>
+
+        <label for="">languages</label>
+        <input type="checkbox" name="lanVN" id="lanVN" checked>VN -
+        <input type="checkbox" name="lanEN" id="lanEN" checked>EN -
+        <input type="checkbox" name="lanJP" id="lanJP">JP 
+        <input type="checkbox" name="lanCH" id="lanCH">CH 
+        <br><br>
+        <label for="">level</label>
+        <input type="number" name="level" id="level" required min="1" max="10" value="5"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+
+        <label for="">Summary</label>
+        <br>
+        <textarea name="summary" id="summary" cols="40" rows="10" readonly></textarea>
+    </form>
+
+    <script>
+        document.getElementById("formDK").onsubmit=function(){
+            //lay du lieu nhap tren form
+            var user = document.getElementById("user").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+            var level = document.getElementById("level").value;
+
+            //dua het vo mang a
+            var a =[];
+            a.push(`username: ${user}`);
+            a.push(`password: ${password}`);
+            a.push(`email: ${email}`);
+            a.push(`level: ${level}`);
+
+            //chuyen mang a -> chuoi, moi phan tu cach nhau boi ki hieu '\n'
+            var s = a.join('\n');
+            alert(s);
+
+            document.getElementById("summary").innerHTML=s;
+            return false;
+        }
+    </script>
+</body>
+</html>

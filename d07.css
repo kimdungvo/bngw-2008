@@ -1,0 +1,30 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+}
+label{
+    color: blue;
+    display: inline-block;
+    width: 100px;
+}
+input:required{
+    background-color: lightseagreen;
+}
+input[type="submit"]{
+    color: whitesmoke;
+    background-color: olivedrab;
+    padding: 2px 15px;
+    border-radius: 6px;
+}
+input[type="reset"], input[type="button"]{
+    color: whitesmoke;
+    background-color: royalblue;
+    padding: 2px 15px;
+    border-radius: 6px;
+}
+form{
+    padding: 1rem;
+    border: silver inset medium;
+    width: 500px;
+    margin-left: 1rem;
+}

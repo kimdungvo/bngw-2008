@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                <form action="" method="POST" role="form">
+                    <legend>SIGN-UP</legend>
+
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Input username">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Input password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password-Confirm</label>
+                        <input type="password" class="form-control" id="pass2" name="pass2"
+                            placeholder="Input password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Location</label>
+                        <select name="location" id="location" class="form-control" required="required">
+                            <option value="SG">Saigon</option>
+                            <option value="HU">Hue</option>
+                            <option value="HN">Hanoi</option>
+                            <option value="CT">Cantho</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Languages
+                            <input type="checkbox" name="lang" id="lan-VN" value="VN" checked>Vietnamese
+                            <input type="checkbox" name="lang" id="lan-EN" value="EN">English
+                            <input type="checkbox" name="lang" id="lan-FR" value="FR">French
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-warning">Reset</button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

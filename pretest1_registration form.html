@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: arial;
+        }
+        a{
+            text-decoration: none;
+            padding: 7%;
+        }
+        img{
+            width: 80%;
+            margin: auto;
+            display: block;
+        }
+        footer{
+            text-align: center;
+        }
+        form{
+            border:blue double thick;
+            width: 40%;
+            margin: auto;
+        }
+        h1{
+            color: white;
+            background-color: green;
+            text-align: center;
+            margin-top: 0%;
+        }
+        input[type="text"], input[type="tel"]{
+            border: red solid medium;
+            padding-right: 47%;
+        }
+        input[type="submit"], input[type="reset"]{
+            border: black double thick;
+            border-radius: 15px;
+            margin-bottom: 1%;
+        }
+        input[type="submit"]{
+            margin-left: 30%;
+        }
+        td{
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Online Shopee</h1>
+        </header>
+
+        <nav>
+            <hr>
+            <a href="../pretest/pretest1.html">HOME</a>
+            <a href="">PRODUCTS</a>
+            <a href="">SHOPS</a>
+            <a href="../pretest/pretest1_registration form.html">REGISTER</a>
+            <a href="">SIGNIN</a>
+            <hr>
+        </nav>
+
+        <section>
+            <form action="" name="form" id="form">
+                <h1>Member Information</h1>
+                <table>
+                    <tr>
+                        <td><label for="">Full name</label></td>
+                        <td><input type="text" name="name" id="name" value="Allan" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender</label></td>
+                        <td><input type="radio" name="gender" id="Male" value="Male" checked>Male
+                            <input type="radio" name="gender" id="Female" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Hobbies</label></td>
+                        <td><input type="checkbox" name="hobbies" id="Shopping" value="Shopping" checked>Shopping
+                            <input type="checkbox" name="hobbies" id="Eatingout" value="Eating out">Eating out
+                            <input type="checkbox" name="hobbies" id="Sporting" value="Sporting">Sporting
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Date of Birth</label></td>
+                        <td><input type="date" name="dob" id="dob" value="2000-03-12"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Address</label></td>
+                        <td><input type="text" name="address" id="address" value="124 Haminton" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email</label></td>
+                        <td><input type="text" name="email" id="email" value="Allan@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Phone Number</label></td>
+                        <td><input type="number" name="phone" id="phone" value="012123456" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">City</label></td>
+                        <td><select name="city" id="city" required>
+                                <option value="select">--Select--</option>
+                                <option value="saigon">Saigon</option>
+                                <option value="hue">Hue</option>
+                                <option value="hanoi">Hanoi</option>
+                                <option value="danang">Danang</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Comment</label></td>
+                        <td><textarea name="comment" id="comment" cols="50" rows="5"></textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+<br>
+        <footer>
+            Shopee &reg; Copyright 2017. All rights reserved.
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById("form").onsubmit = function(){
+            var email = document.getElementById("email").value;
+            re = /^\w+@\w+\.\w+$/;
+            if(re.test(email)==false){
+                alert("Email field must be in format xxx@xxx.xxx!");
+                document.getElementById("email").focus();
+                return false;
+            } 
+            var dob = document.getElementById("dob").value;
+            var age = new Date().getFullYear()-(new Date(dob)).getFullYear();
+            if(age < 17){
+                alert("Member age must be 17 years old or above!");
+                document.getElementById("dob").focus();
+                return false;
+            }
+            var phone = document.getElementById("phone").value;
+            re = /^\d+$/;
+            if(re.test(phone)==false){
+                alert("Mobile must be digits only!");
+            }
+            
+            var name = document.getElementById("name").value;
+            var gender = document.querySelector("input[name='gender']:checked").value;
+            var hobbies = Array.from(document.querySelectorAll("input[type=checkbox][name=hobbies]:checked")).map(e =>e.value);
+            var address = document.getElementById("address").value;
+            var city = document.getElementById("city").value;
+            var comment = document.getElementById("comment").value;
+
+//alert("1")
+            var a = [];
+            a.push(`username: ${name}`);
+            a.push(`gender: ${gender}`);
+            a.push(`hobbies: ${hobbies.join(', ')}`);
+            a.push(`address: ${address}`);
+            a.push(`city: ${city}`);
+            a.push(`comment: ${comment}`);
+
+            var s = a.join('\n');
+            alert(s);
+            return false;
+        }
+    </script>
+</body>
+
+</html>

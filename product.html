@@ -1,0 +1,168 @@
+<div class="container">
+    <div class="page-header">
+        <h1 style="padding-top: 2rem;"></h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="v-menu">
+                <h3>TYPE</h3>
+                <hr>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Purse" id="purse" class="type" name="type"> Purse</label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Wallet" id="wallet" class="type" name="type">Wallet</label>
+                </div>
+                <br><br><br>
+
+                <h3>BRAND</h3>
+                <hr>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Louis Vutton" id="L" class="brand" name="brand">Louis
+                        Vutton</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Gucci" id="G" class="brand" name="brand">Gucci</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Dior" id="D" class="brand" name="brand">Dior</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Fendi" id="F" class="brand" name="brand">Fendi</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Coach" id="C" class="brand" name="brand">Coach</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Prada" id="P" class="brand" name="type">Prada</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Burberry" id="BB" class="brand" name="brand">Burberry</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Love Moschino" id="LM" class="brand" name="brand">Love
+                        Moschino</label>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-10">
+            <div class="row" id="products">
+
+                <div class="col-sm-6 col-md-4 divImage">
+                    <img src="images/C1.PNG" alt="" class="Image">
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .container {
+                width: 95%;
+            }
+
+            .Image {
+                border: solid lightgray medium;
+                display: block;
+                margin: auto;
+            }
+
+            .divImage {
+                width: 450px;
+                height: 500px;
+                text-align: center;
+                /* border: solid goldenrod medium; */
+                margin: 10px;
+                box-shadow: 0px 0px 3px gray;
+                padding: 10px;
+            }
+
+            .v-menu {
+                border: gray solid medium;
+                padding-left: 1rem;
+                width: 200px;
+            }
+        </style>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var data = [];
+            $.getJSON("js/data.json", function (items) {
+                console.log(items);
+                data = items;
+                displayImages(data);
+
+            });
+
+            //lap trinh su kien search
+            $("#formSearch").submit(function (e) {
+                e.preventDefault();
+
+                let search = $("#search").val();
+                let re = new RegExp(search, "ig");
+                let subdata = data.filter(item => item.name.search(re) >= 0);
+
+                displayImages(subdata);
+
+            })
+
+            //lap trinh su kien click chon loai san pham
+            $("input[type=checkbox]").click(function () {
+
+                var types =
+                    $('input:checkbox[name="type"]:checked')
+                        .map(function () {
+                            return $(this).val();
+                        }).get();
+
+                types = types.toString().trim();
+
+                let subdata = (types.length == 0) ? data : data.filter(item => types.search(item.type) >= 0);
+
+                displayImages(subdata);
+
+            }
+            );
+
+            $("input[type=checkbox]").click(function () {
+
+                var brands =
+                    $('input:checkbox[name="brand"]:checked')
+                        .map(function () {
+                            return $(this).val();
+                        }).get();
+
+                brands = brands.toString().trim();
+
+                let subdata = (brands.length == 0) ? data : data.filter(item => brands.search(item.brand) >= 0);
+
+                displayImages(subdata);
+
+            }
+            );
+        });
+
+        function displayImages(items) {
+            let s = ``;
+
+            $.each(items, function (k, v) {
+
+                s += `<div class="col-sm-6 col-md-4 divImage">
+                        <img src="images/${v.link}" alt="" class="Image">
+                        <p style="font-size:2rem;">
+                            ${v.name}<br>
+                        </p> 
+                    </div> `;
+
+            });
+
+            $("#products").html(s);
+
+        }
+    </script>
+
+</div>

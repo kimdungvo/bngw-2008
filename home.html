@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        h2 {
+            color: deepskyblue;
+        }
+
+        span {
+            color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#"
+                    style="font-family: cursive; color:greenyellow; font-weight: bolder; font-size: xx-large;; ">
+                    NEXTAG</a>
+                <img src="carousel/logo2.png" alt="">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home.html"> <span class="glyphicon glyphicon-home"></span> Home </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span
+                                class="glyphicon glyphicon-briefcase"></span> Product <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="type">Type</a></li>
+                            <li><a href="#" id="brand">Brand</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="comparison"> <span class="glyphicon glyphicon-question-sign"></span>
+                            Comparison</a></li>
+                    <li><a href="#" id="aboutus"> <span class="glyphicon glyphicon-user"></span> About us</a></li>
+                    <li><a href="#" id="contactus"> <span class="glyphicon glyphicon-envelope"></span> Contact us</a>
+                    </li>
+                </ul>
+                <!-- <form class="navbar-form navbar-right" role="search"> 
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"> <i class="glyphicon glyphicon-search"></i></button>
+                </form> -->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+    </div>
+
+    <div id="main-content">
+        <br><br>
+        <div class="container-fluid">
+            <!-- carousel -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="carousel/carousel4.png" alt="">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <img src="carousel/carousel3.png" alt="">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="carousel/carousel2.png" alt="">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="carousel/carousel1.png" alt="">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <h2 style="text-align: center;">BRANDS</h2>
+            <hr style="width:6%; text-align:center; color:gray; height: 0.5px; background-color: gray;">
+            <div class="row">
+                <style>
+                    .logo {
+                        margin-top: 20%;
+                        margin-left: 14%;
+                        border: bisque groove thick;
+                    }
+                </style>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/gucci.PNG" alt="" class="logo"></div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/prada.PNG" alt="" class="logo"></div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/burberry.png" alt="" class="logo"></div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/louis vuitton.PNG" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/coach.PNG" alt="" class="logo"></div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/fendi.PNG" alt="" class="logo"></div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/dior.PNG" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/love moschino.PNG" alt="" class="logo">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <h2 style="text-align: center;">BEST-SELLING PRODUCTS</h2>
+            <hr style="width:16%; text-align:center; color:gray; height: 0.5px; background-color: gray;">
+            <div class="row">
+                <style>
+                    .img-thumbnail {
+                        margin-top: 2rem;
+                    }
+                </style>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM6.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BURBERRY/B2_P4.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BURBERRY/B12_W4.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C2.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C4.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="PRADA/P13.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM10.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C5.PNG" alt="" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <h2 style="text-align: center;">NEW ARRIVALS</h2>
+            <hr style="width:9%; text-align:center; color:gray; height: 0.5px; background-color: gray;">
+            <div class="row">
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1_P2.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1_P3.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5_P2.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5_P3.PNG" alt="" class="img-thumbnail">
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P2.PNG" alt=""
+                        class="img-thumbnail"></div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P3.PNG" alt=""
+                        class="img-thumbnail"></div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15.PNG" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P2.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P3.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="panel panel-default">
+        <style>
+            ul>li>a {
+                color: gray;
+            }
+
+            .submit-btn {
+                background-color: indianred;
+            }
+
+            .panel-footer {
+                background-color: thistle;
+            }
+
+            h5 {
+                font-weight: bold;
+            }
+        </style>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-6 col-md-3 col-lg-3">
+                    <h5>CUSTOMER CARE</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3">
+                    <h5>THE COMPANY</h5>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3">
+                    <h5>FOLLOW US ON</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Youtube</a></li>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3">
+                    <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                    <form action="" onsubmit="event.preventDefault(); alert('Thanks for subcribing!')">
+                        <input type="text" name="email" required pattern="\w+@\w+\.[a-zA-z]{2,3}"
+                            placeholder="Your email here...">
+                        <button class="submit-btn" type="submit">Subcribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="text-align: center;">
+                Powered by MODA GROUP Copyright &copy; November, 2020 NEXTAG - All Rights Reserved - VAT 57986321407
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            var data = [];
+
+            $("#type").click(function () {
+                //console.log("type !");
+                $("#main-content").load("product.html")
+            });
+            $("#brand").click(function () {
+                $("#main-content").load("product.html")
+
+
+            });
+            $("#comparison").click(function () {
+                $("#main-content").load("comparison.html")
+            });
+            $("#aboutus").click(function () {
+                $("#main-content").load("aboutus.html")
+            });
+            $("#contactus").click(function () {
+                // console.log("contact us !");
+                $("#main-content").load("contactus.html")
+            });
+
+            //lap trinh su kien search
+            $("#formSearch").submit(function (e) {
+                e.preventDefault();
+
+                let search = $("#search").val();
+                let re = new RegExp(search, "ig");
+                let subdata = data.filter(item => item.name.search(re) >= 0);
+
+                displayImages(subdata);
+
+            })
+        });
+    </script>
+
+</body>
+
+</html>

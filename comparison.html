@@ -1,0 +1,104 @@
+<br><br>
+<!--modal (hien khung ket qua-->
+<div class="modal fade modal-lg" id="myModal">
+    <div class="modal-dialog modal-lg">
+
+        <!--modal ghi thong tin trong khung hien-->
+        <div class="modal-content">
+            <div class="modal-header" role="document">
+                <!--nut dong khung-->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <!--thong tin cua o so sanh-->
+                <div class="container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tong the cua store-->
+<div class="container-fluid ">
+    <!--store bottom thanh ben trai-->
+    <div class="col-sm-2">
+        <div class="col-sm-12  text-center">
+            <div class="page-header">
+                <br>
+                <button type="button" class="btn btn-info" id="compare"></span> COMPARE</button>
+                <button type="button" class="btn btn-danger" id="reset"></span> RESET</button>
+                <br>
+            </div>
+            <div class="row" id="note"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="v-menu">
+                <h3>TYPE</h3>
+                <hr>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Purse" id="purse" class="type" name="type"> Purse</label>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Wallet" id="wallet" class="type" name="type">Wallet</label>
+                </div><br>
+            </div>
+            <br><br><br>
+            <div class="v-menu">
+                <h3>BRAND</h3>
+                <hr>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Louis Vutton" id="L" class="brand" name="brand">Louis
+                        Vuitton</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Gucci" id="G" class="brand" name="brand">Gucci</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Dior" id="D" class="brand" name="brand">Dior</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Fendi" id="F" class="brand" name="brand">Fendi</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Coach" id="C" class="brand" name="brand">Coach</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Prada" id="P" class="brand" name="brand">Prada</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Burberry" id="BB" class="brand" name="brand">Burberry</label>
+                </div><br>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="Love Moschino" id="LM" class="brand" name="brand">Love
+                        Moschino</label>
+                </div><br>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!--thanh ben phai-->
+    <div class="row col-sm-10 text-center">
+        <div class="page-header">
+            <h2 style="padding-top: 1.1rem; text-align: center; color: deepskyblue;">COMPARE</h2>
+        </div>
+        <div class="col-sm-12 text-center " id="main">
+            <div class="col-sm-2" id="information">
+                <!--append information to compare-->
+            </div>
+            <div class="col-sm-10" id="product">
+                <!--append BRAND-->
+            </div>
+            <div class="col-sm-12 text-center" id="showshop">
+                <!--show product here-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--button scroll-->
+<a class="on_top" href="#top" style="display: block;"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
+<!-- <script src="js/product_list.js"></script> -->
+<script src="js/compare.js"></script>
+<link rel="stylesheet" href="css/compare.css">

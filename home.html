@@ -11,10 +11,45 @@
     <style>
         h2 {
             color: deepskyblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         span {
             color: indianred;
+        }
+
+        .fa {
+            padding: 7px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 1px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
         }
     </style>
 </head>
@@ -42,14 +77,8 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.html"> <span class="glyphicon glyphicon-home"></span> Home </a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span
-                                class="glyphicon glyphicon-briefcase"></span> Product <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" id="type">Type</a></li>
-                            <li><a href="#" id="brand">Brand</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#" id="Product"> <span class="glyphicon glyphicon-briefcase"></span>
+                        Product</a></li>
                     <li><a href="#" id="comparison"> <span class="glyphicon glyphicon-question-sign"></span>
                             Comparison</a></li>
                     <li><a href="#" id="aboutus"> <span class="glyphicon glyphicon-user"></span> About us</a></li>
@@ -69,7 +98,7 @@
 
     <div id="main-content">
         <br><br>
-        <div class="container-fluid">
+        <div class="jumbotron-fluid">
             <!-- carousel -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -85,26 +114,14 @@
 
                     <div class="item active">
                         <img src="carousel/carousel4.png" alt="">
-                        <div class="carousel-caption">
-                            <h3></h3>
-                            <p></p>
-                        </div>
                     </div>
 
                     <div class="item ">
                         <img src="carousel/carousel3.png" alt="">
-                        <div class="carousel-caption">
-                            <h3></h3>
-                            <p></p>
-                        </div>
                     </div>
 
                     <div class="item">
                         <img src="carousel/carousel2.png" alt="">
-                        <div class="carousel-caption">
-                            <h3></h3>
-                            <p></p>
-                        </div>
                     </div>
 
                     <div class="item">
@@ -139,16 +156,23 @@
                         border: bisque groove thick;
                     }
                 </style>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/gucci.PNG" alt="" class="logo"></div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/prada.PNG" alt="" class="logo"></div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/burberry.png" alt="" class="logo"></div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/louis vuitton.PNG" alt="" class="logo">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/gucci.PNG" alt="" class="logo">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/coach.PNG" alt="" class="logo"></div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/fendi.PNG" alt="" class="logo"></div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/dior.PNG" alt="" class="logo">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/prada.PNG" alt="" class="logo">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BRAND LOGO/love moschino.PNG" alt="" class="logo">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/burberry.png" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/louis vuitton.PNG" alt=""
+                        class="logo">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/coach.PNG" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/fendi.PNG" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/dior.PNG" alt="" class="logo">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BRAND LOGO/love moschino.PNG" alt=""
+                        class="logo">
                 </div>
             </div>
         </div>
@@ -162,21 +186,25 @@
                         margin-top: 2rem;
                     }
                 </style>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM6.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM6.PNG" alt=""
+                        class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BURBERRY/B2_P4.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BURBERRY/B2_P4.PNG" alt=""
+                        class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="BURBERRY/B12_W4.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="BURBERRY/B12_W4.PNG" alt=""
+                        class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C2.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="COACH/C2.PNG" alt="" class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C4.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="COACH/C4.PNG" alt="" class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="PRADA/P13.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="PRADA/P13.PNG" alt="" class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM10.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="LOVE MOSCHINO/LM10.PNG" alt=""
+                        class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3"><img src="COACH/C5.PNG" alt="" class="img-thumbnail">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img src="COACH/C5.PNG" alt="" class="img-thumbnail">
                 </div>
             </div>
         </div>
@@ -185,31 +213,39 @@
             <h2 style="text-align: center;">NEW ARRIVALS</h2>
             <hr style="width:9%; text-align:center; color:gray; height: 0.5px; background-color: gray;">
             <div class="row">
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1_P2.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B1_P3.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5_P2.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="BURBERRY/B5_P3.PNG" alt="" class="img-thumbnail">
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P2.PNG" alt=""
-                        class="img-thumbnail"></div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P3.PNG" alt=""
-                        class="img-thumbnail"></div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15.PNG" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P2.PNG" alt=""
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B1.PNG" alt=""
                         class="img-thumbnail">
                 </div>
-                <div class="col-xs-6 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P3.PNG" alt=""
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B1_P2.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B1_P3.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B5.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B5_P2.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="BURBERRY/B5_P3.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P2.PNG" alt=""
+                        class="img-thumbnail"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM11_P3.PNG" alt=""
+                        class="img-thumbnail"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P2.PNG" alt=""
+                        class="img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4"><img src="LOVE MOSCHINO/LM15_P3.PNG" alt=""
                         class="img-thumbnail">
                 </div>
             </div>
@@ -236,29 +272,32 @@
         </style>
         <div class="panel-footer">
             <div class="row">
-                <div class="col-xs-6 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h5>CUSTOMER CARE</h5>
                     <ul>
                         <li>
                             <a href="#">Contact us</a>
                         </li>
+                    </ul>
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h5>THE COMPANY</h5>
                     <ul>
                         <li>
                             <a href="#">About us</a>
                         </li>
+                    </ul>
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h5>FOLLOW US ON</h5>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Google</a></li>
-                        <li><a href="#">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.google.com/" class="fa fa-google"></a></li>
+                        <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                        <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                    </ul>
                 </div>
-                <div class="col-xs-6 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
                     <form action="" onsubmit="event.preventDefault(); alert('Thanks for subcribing!')">
                         <input type="text" name="email" required pattern="\w+@\w+\.[a-zA-z]{2,3}"
@@ -279,14 +318,9 @@
 
             var data = [];
 
-            $("#type").click(function () {
+            $("#Product").click(function () {
                 //console.log("type !");
                 $("#main-content").load("product.html")
-            });
-            $("#brand").click(function () {
-                $("#main-content").load("product.html")
-
-
             });
             $("#comparison").click(function () {
                 $("#main-content").load("comparison.html")
@@ -298,21 +332,22 @@
                 // console.log("contact us !");
                 $("#main-content").load("contactus.html")
             });
-
+            
             //lap trinh su kien search
-            $("#formSearch").submit(function (e) {
-                e.preventDefault();
+            //$("#formSearch").submit(function (e) {
+            //  e.preventDefault();
 
-                let search = $("#search").val();
-                let re = new RegExp(search, "ig");
-                let subdata = data.filter(item => item.name.search(re) >= 0);
+            //let search = $("#search").val();
+            //let re = new RegExp(search, "ig");
+            //let subdata = data.filter(item => item.name.search(re) >= 0);
 
-                displayImages(subdata);
+            //displayImages(subdata);
 
-            })
+            //})
         });
     </script>
 
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </html>

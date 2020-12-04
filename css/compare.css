@@ -1,0 +1,82 @@
+/* compare table */
+ /*.border{
+   border-bottom: 1px solid rgba(0, 0, 0,0.2); 
+    background-color: #fff;
+    text-align: center;
+    
+  } */
+  
+  .type{
+    font-weight: bold;
+  }
+  
+  .rowImage{
+    height: 15em;
+    padding-bottom: 10px;
+    
+  }
+  
+  #information p{
+   margin: 0;
+   line-height: 2em;
+  }
+  
+  #product p{
+    margin: 0;
+    line-height: 2em;
+  }
+  
+  /* image */
+  .Image {
+    width: 100%;
+    border: solid lightgray medium;
+    display: block;
+    margin: auto;
+}
+  
+  .mark{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }   
+  /* type */
+  .checkbox{
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+  /* scoll to top */
+    a.on_top {
+        opacity: 0.6;
+        display: none;
+    }
+
+    a.on_top:hover {
+        background-color:darkcyan;
+        border: 1px solid darkcyan;
+        opacity: 1;
+    }
+
+    a.on_top span {
+        font-size: x-large;
+    }
+
+    a.on_top {
+        border-radius: 40px;
+        background-color: cadetblue;
+        padding: 7px 10px;
+        white-space: nowrap;
+        position: fixed;
+        bottom: 75px;
+        right: 30px;
+        height: 44px;
+    }
+    .v-menu {
+      border: lightgray solid thin;
+      box-shadow: 0px 0px 2px gray;
+      padding-left: 2rem;
+      width: 200px;
+      margin-top: 15px;
+  }
+
+  

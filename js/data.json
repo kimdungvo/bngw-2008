@@ -1,6 +1,6 @@
 [
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C1",
         "name": "Medium Zip Around Purse With Rexy And Carriage",
         "brand": "Coach",
@@ -23,7 +23,7 @@
         "color": "Pewter/Multi",
         "material": "Metallic smooth leather",
         "strap": "no",
-        "cost": "$250",
+        "cost": "$950",
         "link": "C2.PNG",
         "made": "USA"
     },
@@ -86,7 +86,7 @@
     {
         "type": "purse",
         "id": "C7",
-        "name": "Small Zip Around Purse In Signature Canvas With Lightning Cloud Applique And Snakeskin Detail",
+        "name": "Small Zip Around Purse In Signature Canvas With Lightning Cloud Applique",
         "brand": "Coach",
         "description": "<p>Detailed with electrifying 1970s glam rock-inspired patchwork in a mix of leather and genuine snakeskin, this Signature canvas wallet unzips for easy access to its well-organized interior. Two card slots, a full-length bill compartment and a zip coin pocket keep everyday essentials neatly tucked away.</p>",
         "size": "4.5 x 3.75 x 0.75 inches<br>(length x height x width)",
@@ -100,7 +100,7 @@
     {
         "type": "wallet",
         "id": "C8",
-        "name": "Double Billfold Wallet With Signature Canvas Blocking And Coach Patch Khaki",
+        "name": "Double Billfold Wallet With Signature Canvas Blocking",
         "brand": "Coach",
         "description": "<p>Crafted of smooth leather, this traditional billfold is finished with our Coach retro graphic. It's designed with eight credit card slots, two full-length bill compartments and an interior featuring our Signature canvas.</p>",
         "size": "4.25 x 3.75 x 0.75 inches<br>(length x height x width)",
@@ -490,7 +490,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B6",
         "name": "Vintage Check and Leather Continental Wallet",
         "brand": "Burberry",
@@ -504,7 +504,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B7",
         "name": "Small Icon Stripe E-canvas Folding Wallet",
         "brand": "Burberry",

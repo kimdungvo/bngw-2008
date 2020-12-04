@@ -1,6 +1,67 @@
 <div class="container">
+    <style>
+        .container {
+            width: 95%;
+        }
+
+        .Image {
+            width: 100%;
+            border: solid lightgray medium;
+            display: block;
+            margin: auto;
+        }
+
+        .divImage {
+            width: 30%;
+            height: 450px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0px 0px 3px gray;
+            padding: 10px;
+        }
+
+        .v-menu {
+            border: lightgray solid thin;
+            box-shadow: 0px 0px 2px gray;
+            padding-left: 1rem;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .modal-header {
+            background-color: thistle;
+        }
+
+        /* scoll to top */
+        a.on_top {
+            opacity: 0.6;
+            display: none;
+        }
+
+        a.on_top:hover {
+            background-color: darkcyan;
+            border: 1px solid darkcyan;
+            opacity: 1;
+        }
+
+        a.on_top span {
+            font-size: x-large;
+        }
+
+        a.on_top {
+            border-radius: 40px;
+            background-color: cadetblue;
+            padding: 7px 10px;
+            white-space: nowrap;
+            position: fixed;
+            bottom: 75px;
+            right: 30px;
+            height: 44px;
+        }
+    </style>
+
     <div class="page-header">
-        <h1 style="padding-top: 2rem;"></h1>
+        <h2 style="padding-top: 2rem; text-align: center; color: deepskyblue;">PRODUCTS</h2>
     </div>
 
     <div class="row">
@@ -14,41 +75,41 @@
 
                 <div class="checkbox">
                     <label><input type="checkbox" value="Wallet" id="wallet" class="type" name="type">Wallet</label>
-                </div>
-                <br><br><br>
-
+                </div><br>
+            </div>
+            <br><br><br>
+            <div class="v-menu">
                 <h3>BRAND</h3>
                 <hr>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Louis Vutton" id="L" class="brand" name="brand">Louis
-                        Vutton</label>
+                    <label><input type="checkbox" value="Louis Vutton" id="L" class="type" name="type">Louis
+                        Vuitton</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Gucci" id="G" class="brand" name="brand">Gucci</label>
+                    <label><input type="checkbox" value="Gucci" id="G" class="type" name="type">Gucci</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Dior" id="D" class="brand" name="brand">Dior</label>
+                    <label><input type="checkbox" value="Dior" id="D" class="type" name="type">Dior</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Fendi" id="F" class="brand" name="brand">Fendi</label>
+                    <label><input type="checkbox" value="Fendi" id="F" class="type" name="type">Fendi</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Coach" id="C" class="brand" name="brand">Coach</label>
+                    <label><input type="checkbox" value="Coach" id="C" class="type" name="type">Coach</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Prada" id="P" class="brand" name="type">Prada</label>
+                    <label><input type="checkbox" value="Prada" id="P" class="type" name="type">Prada</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Burberry" id="BB" class="brand" name="brand">Burberry</label>
+                    <label><input type="checkbox" value="Burberry" id="BB" class="type" name="type">Burberry</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value="Love Moschino" id="LM" class="brand" name="brand">Love
+                    <label><input type="checkbox" value="Love Moschino" id="LM" class="type" name="type">Love
                         Moschino</label>
-                </div>
+                </div><br>
             </div>
 
         </div>
-
 
         <div class="col-md-10">
             <div class="row" id="products">
@@ -58,111 +119,126 @@
                 </div>
             </div>
         </div>
-
-        <style>
-            .container {
-                width: 95%;
-            }
-
-            .Image {
-                border: solid lightgray medium;
-                display: block;
-                margin: auto;
-            }
-
-            .divImage {
-                width: 450px;
-                height: 500px;
-                text-align: center;
-                /* border: solid goldenrod medium; */
-                margin: 10px;
-                box-shadow: 0px 0px 3px gray;
-                padding: 10px;
-            }
-
-            .v-menu {
-                border: gray solid medium;
-                padding-left: 1rem;
-                width: 200px;
-            }
-        </style>
     </div>
+</div>
 
-    <script>
-        $(document).ready(function () {
-            var data = [];
-            $.getJSON("js/data.json", function (items) {
-                console.log(items);
-                data = items;
-                displayImages(data);
+<!--button scroll-->
+<a class="on_top" href="#top" style="display: block;"><span class="glyphicon glyphicon-arrow-up"></span></a>
 
-            });
+<script>
+    $(document).ready(function () {
+        var data = [];
+        $.getJSON("js/data.json", function (items) {
+            console.log(items);
+            data = items;
+            displayImages(data);
 
-            //lap trinh su kien search
-            $("#formSearch").submit(function (e) {
-                e.preventDefault();
+        });
 
-                let search = $("#search").val();
-                let re = new RegExp(search, "ig");
-                let subdata = data.filter(item => item.name.search(re) >= 0);
+        //lap trinh su kien search
+        $("#formSearch").submit(function (e) {
+            e.preventDefault();
 
-                displayImages(subdata);
+            let search = $("#search").val();
+            let re = new RegExp(search, "ig");
+            let subdata = data.filter(item => item.name.search(re) >= 0);
 
-            })
+            displayImages(subdata);
 
-            //lap trinh su kien click chon loai san pham
-            $("input[type=checkbox]").click(function () {
+        });
 
-                var types =
-                    $('input:checkbox[name="type"]:checked')
-                        .map(function () {
-                            return $(this).val();
-                        }).get();
+        //lap trinh su kien click chon TYPE san pham
+        $("input[type=checkbox]").click(function () {
 
-                types = types.toString().trim();
+            var types =
+                $('input:checkbox[name="type"]:checked')
+                    .map(function () {
+                        return $(this).val();
+                    }).get();
 
+            types = types.toString();
+            if (types == "Purse" || types == "Wallet") {
                 let subdata = (types.length == 0) ? data : data.filter(item => types.search(item.type) >= 0);
 
                 displayImages(subdata);
 
             }
-            );
-
-            $("input[type=checkbox]").click(function () {
-
-                var brands =
-                    $('input:checkbox[name="brand"]:checked')
-                        .map(function () {
-                            return $(this).val();
-                        }).get();
-
-                brands = brands.toString().trim();
-
-                let subdata = (brands.length == 0) ? data : data.filter(item => brands.search(item.brand) >= 0);
+            else {
+                let subdata = (types.length == 0) ? data : data.filter(item => types.search(item.brand) >= 0);
 
                 displayImages(subdata);
 
             }
-            );
+
         });
 
-        function displayImages(items) {
-            let s = ``;
+        /* scoll to top */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#on_top').fadeIn();
+            } else {
+                $('#on_top').fadeOut();
+            }
+        });
+        $('#on_top').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
 
-            $.each(items, function (k, v) {
+    function displayImages(items) {
+        let s = ``;
 
-                s += `<div class="col-sm-6 col-md-4 divImage">
-                        <img src="images/${v.link}" alt="" class="Image">
-                        <p style="font-size:2rem;">
-                            ${v.name}<br>
-                        </p> 
-                    </div> `;
+        $.each(items, function (k, v) {
 
-            });
-
-            $("#products").html(s);
-
-        }
-    </script>
-
-</div>
+            s += `<div class="col-sm-6 col-md-4 divImage">
+                    <a data-toggle="modal" href="#myModal" title="See information"><img src="images/${v.link}" alt="" class="Image">
+                    </a>   
+                    <p style="font-weight:bolder; font-size:large; color:dodgerblue; font-family:cursive">
+                        ${v.name}
+                    </p> 
+                    <p style="font-size:large; font-style: italic;">
+                        ${v.cost}
+                    </p>
+                    <p>
+                    <!-- Modal --> 
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><span>${v.name}</span></h4>
+                </div>
+                <div class="modal-body">
+                    <p><div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <img src="images/${v.link}" alt="" class="Image" style="height:330px">
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="text-align:left">
+                            <p>       ${v.description}
+                               Brand: ${v.brand}<br>
+                               Size: ${v.size}<br>
+                               Color: ${v.color}<br>
+                               Material: ${v.material}<br>
+                               Price: ${v.cost}<br>
+                               Made in: ${v.made}
+                            </p>    
+                        </div>
+                    </div></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">
+                        <span class="glyphicon glyphicon-download"></span> Download
+                    </button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </p> 
+                </div> `;
+        });
+        $("#products").html(s);
+    }
+</script>

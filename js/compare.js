@@ -1,12 +1,49 @@
 $(function () {
-    var ds= [];
+    var ds = [];
     $.getJSON("js/data.json", function (items) {
         console.log(items);
         ds = items;
-        //displayImages(data);
+        displayImages(data);
+
+    });
+    
+    //lap trinh su kien search
+    $("#formSearch").submit(function (e) {
+        e.preventDefault();
+
+        let search = $("#search").val();
+        let re = new RegExp(search, "ig");
+        let subdata = data.filter(item => item.name.search(re) >= 0);
+
+        displayImages(subdata);
 
     });
 
+    
+    //lap trinh su kien click chon TYPE/BRAND san pham
+    $("input[type=checkbox]").click(function () {
+
+        var types =
+            $('input:checkbox[name="type"]:checked')
+                .map(function () {
+                    return $(this).val();
+                }).get();
+
+        types = types.toString();
+        if (types == "Purse" || types == "Wallet") {
+            let subdata = (types.length == 0) ? data : data.filter(item => types.search(item.type) >= 0);
+
+            displayImages(subdata);
+
+        }
+        else {
+            let subdata = (types.length == 0) ? data : data.filter(item => types.search(item.brand) >= 0);
+
+            displayImages(subdata);
+
+        }
+
+    });
 
     /* control dropdown*/
     // Function: append product 
@@ -181,7 +218,7 @@ $(function () {
                 $("#showshop").fadeIn(1000);
             })
         })
-        
+
         $("#BB").click(function () {
             $("#information, #product").hide(function () {
                 $(".Image").hide();
@@ -207,7 +244,7 @@ $(function () {
 
         })
 
-        /* Reset */
+        /* reset */
         $("#reset").click(function () {
             myReset();
             $("#information, #product").fadeOut();

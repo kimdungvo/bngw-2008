@@ -14,7 +14,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C2",
         "name": "Accordion Zip Purse With Ombre",
         "brand": "Coach",
@@ -28,7 +28,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C3",
         "name": "Accordion Zip Purse With Scattered Rivets",
         "brand": "Coach",
@@ -42,7 +42,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C4",
         "name": "Small Zip Around Purse With Tea Rose",
         "brand": "Coach",
@@ -56,7 +56,7 @@
         "made": "USA"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "C5",
         "name": "Small Wallet With Posey Cluster Print",
         "brand": "Coach",
@@ -70,7 +70,7 @@
         "made": "USA"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "C6",
         "name": "Slim Billfold Wallet With Coach Patch",
         "brand": "Coach",
@@ -84,7 +84,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C7",
         "name": "Small Zip Around Purse In Signature Canvas With Lightning Cloud Applique",
         "brand": "Coach",
@@ -98,7 +98,7 @@
         "made": "USA"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "C8",
         "name": "Double Billfold Wallet With Signature Canvas Blocking",
         "brand": "Coach",
@@ -112,7 +112,7 @@
         "made": "USA"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "C9",
         "name": "Small Bifold Wallet",
         "brand": "Coach",
@@ -126,7 +126,7 @@
         "made": "USA"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "C10",
         "name": "Small Trifold Wallet With Rose Print",
         "brand": "Coach",
@@ -140,7 +140,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C11",
         "name": "Soft Purse",
         "brand": "Coach",
@@ -154,7 +154,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C12",
         "name": "Soft Purse With Cross Stitch Floral Print",
         "brand": "Coach",
@@ -168,7 +168,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C13",
         "name": "Soft Purse With Rose Print",
         "brand": "Coach",
@@ -182,7 +182,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C14",
         "name": "Soft Purse With Scallop Rivets",
         "brand": "Coach",
@@ -196,7 +196,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "C15",
         "name": "Soft Purse With Star Print",
         "brand": "Coach",
@@ -210,7 +210,7 @@
         "made": "USA"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P1",
         "name": "Saffiano Leather Coin Purse",
         "brand": "Prada",
@@ -224,7 +224,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P2",
         "name": "Saffiano Leather Coin Purse",
         "brand": "Prada",
@@ -238,7 +238,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P3",
         "name": "Saffiano Leather Coin Purse",
         "brand": "Prada",
@@ -252,7 +252,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P4",
         "name": "Saffiano Leather Coin Purse",
         "brand": "Prada",
@@ -266,7 +266,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P5",
         "name": "Saffiano leather coin purse with bow",
         "brand": "Prada",
@@ -280,7 +280,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P6",
         "name": "Nylon coin purse",
         "brand": "Prada",
@@ -294,7 +294,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P7",
         "name": "Saffiano leather coin purse",
         "brand": "Prada",
@@ -308,7 +308,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "P8",
         "name": "Nylon Coin Purse",
         "brand": "Prada",
@@ -322,7 +322,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P9",
         "name": "Large Saffiano Leather Wallet",
         "brand": "Prada",
@@ -336,7 +336,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P10",
         "name": "Saffiano Leather Wallet",
         "brand": "Prada",
@@ -350,7 +350,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P11",
         "name": "Small Saffiano Leather Wallet",
         "brand": "Prada",
@@ -364,7 +364,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P12",
         "name": "Saffiano Leather Wallet",
         "brand": "Prada",
@@ -378,7 +378,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P13",
         "name": "Large Saffiano Leather Wallet",
         "brand": "Prada",
@@ -392,7 +392,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P14",
         "name": "Large Saffiano Leather Wallet",
         "brand": "Prada",
@@ -406,7 +406,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "P15",
         "name": "Small Saffiano Leather Wallet",
         "brand": "Prada",
@@ -420,7 +420,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "B1",
         "name": "Leather Olympia Purse with Detachable Strap",
         "brand": "Burberry",
@@ -434,7 +434,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "B2",
         "name": "Mini Two-tone Canvas and Leather Pocket Purse",
         "brand": "Burberry",
@@ -448,7 +448,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "B3",
         "name": "Leather Olympia Purse with Detachable Strap",
         "brand": "Burberry",
@@ -462,7 +462,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "B4",
         "name": "Vintage Check and Leather Purse with Strap",
         "brand": "Burberry",
@@ -476,7 +476,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "B5",
         "name": "Vintage Check Purse with Detachable Strap",
         "brand": "Burberry",
@@ -518,7 +518,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B8",
         "name": "Icon Stripe Print Leather International Bifold Wallet",
         "brand": "Burberry",
@@ -532,7 +532,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B9",
         "name": "Grainy Leather Bifold Wallet",
         "brand": "Burberry",
@@ -546,7 +546,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B10",
         "name": "Vintage Check E-canvas Continental Wallet",
         "brand": "Burberry",
@@ -560,7 +560,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B11",
         "name": "London Check International Bifold Coin Wallet",
         "brand": "Burberry",
@@ -574,7 +574,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B12",
         "name": "Horseferry Print Leather Ziparound Wallet",
         "brand": "Burberry",
@@ -588,7 +588,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B13",
         "name": "Horseferry Print Leather Ziparound Wallet",
         "brand": "Burberry",
@@ -602,7 +602,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B14",
         "name": "Monogram Motif Grainy Leather Continental Wallet",
         "brand": "Burberry",
@@ -616,7 +616,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "B15",
         "name": "Monogram Stripe E-canvas Continental Wallet",
         "brand": "Burberry",
@@ -630,7 +630,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM1",
         "name": "Wallet Lettering Logo",
         "brand": "Love Moschino",
@@ -644,7 +644,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM2",
         "name": "Wallet Padded Heart",
         "brand": "Love Moschino",
@@ -658,7 +658,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM3",
         "name": "Wallet Padded Heart",
         "brand": "Love Moschino",
@@ -672,7 +672,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM4",
         "name": "Zip Around Purse Padded Heart",
         "brand": "Love Moschino",
@@ -686,7 +686,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM5",
         "name": "Zip Around Purse Padded Heart",
         "brand": "Love Moschino",
@@ -700,7 +700,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM6",
         "name": "Purse Padded Logo Small",
         "brand": "Love Moschino",
@@ -714,7 +714,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM7",
         "name": "Purse Padded Logo Small",
         "brand": "Love Moschino",
@@ -728,9 +728,9 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM8",
-        "name": "Zip Around Wallet Glitter Heart",
+        "name": "Zip Around Purse Glitter Heart",
         "brand": "Love Moschino",
         "description": "<p>Heart patch with glittery lightning, Zip closure in light gold plating, Lined interior divided into two compartments by a coin pocket, Two pockets for banknotes,  Eight pockets for cards.</p>",
         "size": "4.3 x 1 x 7.9 inches<br>(length x height x width)",
@@ -742,7 +742,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM9",
         "name": "Zip Around Purse With Studs",
         "brand": "Love Moschino",
@@ -756,7 +756,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM10",
         "name": "Zip Around Purse With Studs",
         "brand": "Love Moschino",
@@ -770,7 +770,7 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM11",
         "name": "Zip Around Purse With Studs",
         "brand": "Love Moschino",
@@ -784,9 +784,9 @@
         "made": "Italy"
     },
     {
-        "type": "purse",
+        "type": "Purse",
         "id": "LM12",
-        "name": "Zip Around Wallet With Logo",
+        "name": "Zip Around Purse With Logo",
         "brand": "Love Moschino",
         "description": "<p>High-frequency logo on the front, Zip closure in nickel plating, Lined interior divided into two compartments by a coin pocket, Two pockets for banknotes, Eight pockets for cards.</p>",
         "size": "4.3 x 1 x 7.5 inches<br>(length x height x width)",
@@ -798,7 +798,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM13",
         "name": "Wallet With Logo",
         "brand": "Love Moschino",
@@ -812,7 +812,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM14",
         "name": "Quilted Wallet With Logo",
         "brand": "Love Moschino",
@@ -826,7 +826,7 @@
         "made": "Italy"
     },
     {
-        "type": "wallet",
+        "type": "Wallet",
         "id": "LM15",
         "name": "Small Wallet With Logo",
         "brand": "Love Moschino",
